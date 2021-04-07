@@ -1,5 +1,5 @@
 # p2r2n_defender
-Scripts to help protect nodes in the public remote rpc node network of monero
+Scripts to help protect nodes in the Public Remote Rpc Node Network (P2R2N) of monero
 
 # Requirements
 Must be run as root because it fiddles with ip blocking.
