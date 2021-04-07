@@ -5,21 +5,19 @@
 
 # Then install netutils if you don't have it
 
+# Modify these parameters 
 
+port=18089
 cutoff=10
 timer=10
+
+
+# Magic loops
 
 while :
 do
 
-##############
-#netstat -anp |grep 18089 | sed 's/ \+ /\t/g' | cut -f 4 | cut -f 1 -d ":" | sort | uniq -c > ips1.txt
-
-#white=$($monerod --rpc-bind-ip $daemon --rpc-bind-port $bport print_pl | grep white | awk '{print $3}' | cut -f 1 -d ":")
-
-
-
-blocklist=$(netstat -anp |grep 18089 | sed 's/ \+ /\t/g' | cut -f 4 | cut -f 1 -d ":" | sort | uniq -c)
+blocklist=$(netstat -anp |grep $port | sed 's/ \+ /\t/g' | cut -f 4 | cut -f 1 -d ":" | sort | uniq -c)
 
 blocklist=($blocklist)
 echo ${blocklist[@]}
