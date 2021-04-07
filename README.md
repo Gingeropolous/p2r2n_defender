@@ -11,7 +11,7 @@ Then, run in a screen session or whatever.
 
 # parameters to modify
 
-in header of file, there are currently 3 variables.
-port = change the port to your public rpc port
-cutoff = IP addresses with more RPC connections than this number will be blocked. I've used between 5 and 10.
-timer = wait time, in seconds, for script to loop. 
+in header of file, there are currently 3 variables.  
+port = change the port to your public rpc port  
+cutoff = IP addresses with more RPC connections than this number will be blocked. I've used between 5 and 10.  
+timer = wait time, in seconds, for script to loop.   
